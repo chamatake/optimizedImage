@@ -1,0 +1,11 @@
+.top-text {
+    font-size: large;
+    color: rebeccapurple;
+    font-weight: bold;
+}
+.button-row {
+    justify-content: space-around;
+    display: flex;
+    width: 250px;
+    margin-top: 20px;
+}

@@ -1,9 +1,5 @@
-<div><span>Well, hello there!!</span></div>
-<mat-tab-group animationDuration="1500ms">
-  <mat-tab label="Baseline">
-    <app-old-content></app-old-content>
-  </mat-tab>
-  <mat-tab label="Optimized">
-    <app-new-content></app-new-content>
-  </mat-tab>
-</mat-tab-group>
+<div><span class="top-text">Well, hello there!!</span></div>
+<div class="button-row">
+  <a mat-stroked-button color="primary" routerLink="default" aria-label="Default">Default</a>
+  <a mat-stroked-button color="accent" routerLink="/optimized" aria-label="Optimized">Optimized</a>
+</div>

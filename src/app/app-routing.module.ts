@@ -6,10 +6,10 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'default', component: OldContentComponent },
-  { path: 'optimized', component: NewContentComponent },
-  { path: '**', component: PageNotFoundComponent },
+  { path: '', title: 'Sample App Home', component: HomeComponent, pathMatch: 'full' },
+  { path: 'default', title: 'With default image tag', component: OldContentComponent },
+  { path: 'optimized', title: 'With optimized image tag', component: NewContentComponent },
+  { path: '**', title: 'Page not found', component: PageNotFoundComponent },
 ];
 
 @NgModule({
